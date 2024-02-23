@@ -1,0 +1,234 @@
+@font-face {
+    font-family: "MyriadPro-Regular";
+    src: url(MyriadPro-Regular.otf);
+}
+
+* {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    color: #fff;
+    font-family: "MyriadPro-Regular", sans-serif;
+    border: none;
+    outline: none;
+}
+
+main {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-color: #eee; 
+}
+
+.container {
+    width: 390px;
+    height: 850px;
+    background-color: #131313;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 1rem 1rem 2rem rgba(0, 0, 0, 0.39);
+    -webkit-box-shadow: 1rem 1rem 2rem rgba(0, 0, 0, 0.39);
+    -moz-box-shadow: 1rem 1rem 2rem rgba(0, 0, 0, 0.39);
+    -o-box-shadow: 1rem 1rem 2rem rgba(0, 0, 0, 0.39);
+    -ms-box-shadow: 1rem 1rem 2rem rgba(0, 0, 0, 0.39);
+}
+
+.screen {
+    width: 100%;
+    height: 40%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column-reverse;
+    align-items: flex-end;
+    text-align: end;
+    padding: 10px 20px;
+    font-size: 5.25rem;
+    align-content: flex-end;
+    overflow: hidden;
+}
+
+.buttons {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(4, 85px);
+    gap: 10px;
+
+}
+
+.button {
+    width: 85px;
+    height: 85px;
+    border-radius: 50%;
+    background-color: #3a3a3a;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.button:hover {
+    opacity: .9;
+}
+
+.zero {
+    width: 96%;
+    border-radius: 50px;
+    grid-column: 1 / span 2;
+    text-align: start;
+    padding-left: 2rem;
+}
+
+#clear,
+#intergers,
+#percentage {
+    background-color: #ccc;
+    color: #131313;
+}
+
+.operands {
+    background-color: #ffaa2b;
+}
+
+.theme {
+    position: absolute;
+    width: 100px;
+    height: 500px;
+    background-color: #131313;
+    right: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    cursor: pointer;
+    transition: ease-in-out .3s;
+}
+
+.color:hover {
+    transition: ease-in-out .3s;
+    opacity: .9;
+}
+
+.color {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.red {
+    background-color: #ff0000;
+}
+
+.green {
+    background-color: #00b98b;
+}
+
+.blue {
+    background-color: #00d1ff;
+}
+
+.pink {
+    background-color: #fd00b3;
+}
+
+.gray {
+    background-color: #777;
+}
+
+.light {
+    background-color: #81b900;
+}
+
+.default {
+    background-color: #ffaa2b;
+}
+
+.number.green {
+    background-color: #293f36;
+}
+
+.operands.green {
+    background-color: #00b98b;
+}
+
+#clear.green,
+#intergers.green,
+#percentage.green {
+    background-color: #00b98b;
+    color: white;
+}
+
+#clear.gray,
+#intergers.gray,
+#percentage.gray {
+    background-color: #777;
+    color: #fff;
+}
+
+.number.gray {
+    background-color: #ddd;
+    color: #131313;
+}
+
+.operands.gray {
+    background-color: #777;
+    color: #131313;
+}
+
+.container.gray {
+    background-color: #fff;
+    box-shadow: 1rem 1rem 2rem rgba(2, 2, 2, 0.137);
+    -moz-box-shadow: 1rem 1rem 2rem rgba(2, 2, 2, 0.137);
+    -webkit-box-shadow: 1rem 1rem 2rem rgba(2, 2, 2, 0.137);
+    -ms-box-shadow: 1rem 1rem 2rem rgba(2, 2, 2, 0.137);
+    -o-box-shadow: 1rem 1rem 2rem rgba(2, 2, 2, 0.137);
+}
+
+main.gray {
+    background-color: #999;
+}
+
+.screen.pink {
+    background-color: #fd00b3;
+}
+
+.operands.pink {
+    background-color: #fd00b3;
+}
+
+.container.pink {
+    background-color: #fff;
+    box-shadow: 1rem 1rem 2rem rgba(0, 0, 0, 0.219);
+    -webkit-box-shadow: 1rem 1rem 2rem rgba(0, 0, 0, 0.219);
+    -moz-box-shadow: 1rem 1rem 2rem rgba(0, 0, 0, 0.219);
+    -o-box-shadow: 1rem 1rem 2rem rgba(0, 0, 0, 0.219);
+    -ms-box-shadow: 1rem 1rem 2rem rgba(0, 0, 0, 0.219);
+
+}
+
+main.pink {
+    background-color: rgb(214, 212, 212);
+}
+
+.number.pink,
+#intergers.pink,
+#percentage.pink,
+#clear.pink {
+    background-color: #ddd;
+    color: #131313;
+}
+
+.val.gray {
+    color: #131313;
+    background-color: transparent;
+}
